@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+android:background="#000000"
+    tools:context=".MainActivity" >
+
+	<!-- アニメーションビュー -->
+
+    <LinearLayout
+        android:id="@+id/layout_anim_field"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+    	<ImageView
+    	    android:id="@+id/image_anim_image"
+    	    android:layout_width="550dip"
+    	    android:layout_height="550dip"
+    	    android:src="@drawable/whirl" />
+<!--
+    	<ImageView
+    	    android:id="@+id/image_anim_image"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="match_parent"
+    	    android:src="@drawable/net_400_400" />
+-->
+
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ui_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.19"
+                android:text="Start"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/buttonStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.22"
+                android:text="Stop"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
